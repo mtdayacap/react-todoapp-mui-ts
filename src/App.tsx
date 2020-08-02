@@ -43,13 +43,10 @@ function App() {
     const newTodoList = [...todoList];
     newTodoList.push(newTodo);
 
-    console.log(newTodoList);
     setTodoList(newTodoList);
   }
 
   const removeTodo = (todoItem: TodoItem) => {
-    console.log('Remove: ' + todoItem.description);
-
     const newTodoList = [...todoList];
 
     const index = newTodoList.indexOf(todoItem);
